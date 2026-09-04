@@ -2,6 +2,9 @@
 // home grid and gets its own case-study page at /work/<slug> automatically.
 //
 // media entries: { type: 'video' | 'image', src: '/path-in-public', caption }
+// or { type: 'vimeo', id: '<vimeo video id>', caption } for a hosted embed.
+// Videos can also set poster: '/path-in-public' (a still shown before play,
+// also used as the home-grid thumbnail when a project has no real images yet).
 // Leave src as '' to render a styled placeholder. See MEDIA_GUIDE.md for
 // what to record and at which aspect ratios.
 
@@ -28,9 +31,14 @@ export const projects = [
       },
     ],
     media: [
-      { type: 'video', src: '', caption: 'Hero: in-headset capture (16:9, 30-60s)' },
-      { type: 'image', src: '', caption: 'Still: key moment' },
-      { type: 'image', src: '', caption: 'Still: interaction detail' },
+      {
+        type: 'video',
+        src: '/media/seeds-of-return.mp4',
+        poster: '/media/seeds-of-return-poster.jpg',
+        caption: 'In-headset capture of Seeds Of Return',
+      },
+      { type: 'image', src: '/media/seeds-of-return-1.jpg', caption: 'The void world: bare trees in the fog before anything is planted' },
+      { type: 'image', src: '/media/seeds-of-return-2.jpg', caption: 'Grabbing a seed from a tree' },
     ],
   },
   {
@@ -94,10 +102,13 @@ export const projects = [
       },
     ],
     media: [
-      { type: 'video', src: '', caption: 'Hero: walkthrough of a gallery exhibit with other visitors present (16:9)' },
-      { type: 'image', src: '', caption: 'Choosing an exhibit from the unified hub' },
-      { type: 'image', src: '', caption: 'Exploring an exhibit together' },
-      { type: 'image', src: '', caption: 'A featured work up close' },
+      { type: 'vimeo', id: '885761828', caption: 'Exhibit teasers from the IC Contemporary platform' },
+      { type: 'image', src: '/media/icc-queer-identities.jpg', caption: 'Queer Identities: portraits under the skylight' },
+      { type: 'image', src: '/media/icc-intersection.jpg', caption: 'Intersection: the entrance hall and its curtained archways' },
+      { type: 'image', src: '/media/icc-somnarium.jpg', caption: 'Somnarium: a stone path through a dreamlike garden' },
+      { type: 'image', src: '/media/icc-traces-of-us.jpg', caption: 'Traces of Us: neon script above the archway' },
+      { type: 'image', src: '/media/icc-uniform.jpg', caption: 'Uniform: a courtyard of shipping crates by the water' },
+      { type: 'image', src: '/media/icc-elly.jpg', caption: 'Elly: a forest installation framed by the stone entrance' },
     ],
   },
 ];

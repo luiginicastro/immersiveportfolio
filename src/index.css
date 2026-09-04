@@ -291,6 +291,10 @@ main {
   border: 1px solid var(--border);
 }
 
+.media-embed {
+  background: var(--bg-raised);
+}
+
 .media-placeholder {
   display: flex;
   flex-direction: column;

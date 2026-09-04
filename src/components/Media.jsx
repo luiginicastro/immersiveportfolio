@@ -1,14 +1,29 @@
 import { Play, Image as ImageIcon } from 'lucide-react';
 
-// Renders real media when src is set, otherwise a styled placeholder tile
-// using the project's accent gradient.
+// Renders real media when src (or a Vimeo id) is set, otherwise a styled
+// placeholder tile using the project's accent gradient.
 export default function Media({ item, accent, ratio = '16 / 9', className = '' }) {
+  if (item.type === 'vimeo' && item.id) {
+    return (
+      <iframe
+        className={`media media-embed ${className}`}
+        style={{ aspectRatio: ratio }}
+        src={`https://player.vimeo.com/video/${item.id}?dnt=1&title=0&byline=0&portrait=0`}
+        title={item.caption}
+        allow="fullscreen; picture-in-picture"
+        allowFullScreen
+        loading="lazy"
+      />
+    );
+  }
+
   if (item.src) {
     return item.type === 'video' ? (
       <video
         className={`media ${className}`}
         style={{ aspectRatio: ratio }}
         src={item.src}
+        poster={item.poster}
         controls
         playsInline
         preload="metadata"

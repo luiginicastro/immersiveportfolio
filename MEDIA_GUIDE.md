@@ -18,6 +18,8 @@ That's it — the placeholder is replaced automatically.
 - Show *interaction*, not menus: hands grabbing, UI responding, people reacting
 - Export as MP4 (H.264), 1080p, keep under ~15 MB each (use HandBrake to compress)
 - No audio needed — they play with controls; captions in the case study do the talking
+- Add a `poster` still (JPEG, same 16:9 frame) so the video has a cover before play
+- Long or heavy footage: upload to Vimeo and use `{ type: 'vimeo', id: '...' }` instead of a file
 
 **Gallery images**
 - 16:9 stills, 1600px wide is plenty
