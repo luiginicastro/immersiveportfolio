@@ -12,18 +12,22 @@ export const projects = [
   {
     slug: 'seeds-of-return',
     title: 'Seeds Of Return',
-    tagline: '[Placeholder: one-line hook for the project]',
+    tagline: 'A mixed reality installation that asks: what emerges when we stop trying to move forward?',
     year: '2025',
     role: 'Artist & Lead Developer',
     platform: 'Meta Quest 3',
     tools: 'Unity',
     accent: ['#4ade80', '#fbbf24'],
     summary:
-      '[Placeholder: 2-3 sentence summary of what Seeds Of Return is, who it is for, and what makes it worth experiencing.]',
+      'In a world where urgency overshadows introspection, this piece invites slowness. Through augmented stillness and shifting atmospheric states, this mixed reality installation asks: What emerges when we stop trying to move forward?',
     sections: [
       {
-        heading: 'The project',
-        body: '[Placeholder: the story and intent behind Seeds Of Return, your own art piece.]',
+        heading: 'The experience',
+        body: 'Visitors enter a world shrouded in thick fog, a symbolic stand-in for grief, uncertainty, and the psychic weight of ecological collapse. Movement thickens the fog. Stillness clears it. As the air begins to lift, the earth signals a chance for potential new life. A garden of native flora and fauna can grow when visitors plant the seeds that sprout in response to their stillness.',
+      },
+      {
+        heading: 'Climate grief as a relational state',
+        body: 'This work embodies climate grief not as paralysis, but as a relational state. Rather than calling for action or control, it invites stillness, slowness, and gentle participation. In that stillness, growth becomes possible. Visitors play an active role in healing the earth simply by being present. They witness a world that can begin to recover when given the opportunity to breathe.',
       },
       {
         heading: 'What I built',
