@@ -14,7 +14,7 @@ export const projects = [
     title: 'Seeds Of Return',
     tagline: 'A mixed reality installation that asks: what emerges when we stop trying to move forward?',
     year: '2025',
-    role: 'Artist & Lead Developer',
+    role: 'Lead Developer',
     platform: 'Meta Quest 3',
     tools: 'Unity',
     accent: ['#4ade80', '#fbbf24'],
@@ -31,7 +31,7 @@ export const projects = [
       },
       {
         heading: 'What I built',
-        body: 'The interaction itself is a fully hand tracked experience that tracks your movement from the headset’s velocity. The experience requires you to be slow and still to allow growth, so if you move too fast you get a prompt telling you to slow down. If you move slow enough, the tree will signal you to move towards it, and when you approach it seeds appear. Each tree unlocks a level of nature, so by the end you have an entire ecosystem that you brought back to life.',
+        body: 'I built Seeds Of Return as a fully hand tracked experience with no controllers. The only input that matters is the velocity of the headset. Move too quickly and the fog closes in, and a quiet prompt asks you to slow down. Settle into stillness and a nearby tree signals for you to approach. As you draw near, seeds appear for you to take and plant. Each tree you tend unlocks another level of nature, so by the end you stand inside an entire ecosystem that you brought back to life through your own stillness.',
       },
     ],
     media: [
