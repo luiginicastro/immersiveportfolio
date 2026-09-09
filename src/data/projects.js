@@ -31,7 +31,7 @@ export const projects = [
       },
       {
         heading: 'What I built',
-        body: '[Placeholder: your role, key interactions, technical and design decisions.]',
+        body: 'The interaction itself is a fully hand tracked experience that tracks your movement from the headset’s velocity. The experience requires you to be slow and still to allow growth, so if you move too fast you get a prompt telling you to slow down. If you move slow enough, the tree will signal you to move towards it, and when you approach it seeds appear. Each tree unlocks a level of nature, so by the end you have an entire ecosystem that you brought back to life.',
       },
     ],
     media: [
