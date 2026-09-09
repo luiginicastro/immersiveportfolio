@@ -3,14 +3,15 @@ import { ArrowUpRight } from 'lucide-react';
 import Media from './Media';
 
 export default function ProjectCard({ project, index }) {
-  // Card thumbnail: prefer a real image, then a video's poster frame (a
-  // playable <video> inside a link is awkward), then the first placeholder.
+  // Card thumbnail: prefer the hero video's poster frame (a deliberately
+  // chosen still; a playable <video> inside a link is awkward), then the first
+  // real image, then the first placeholder.
   const real = project.media.filter((m) => m.src);
   const image = real.find((m) => m.type === 'image');
   const video = real.find((m) => m.type === 'video');
   const hero =
-    image ||
     (video?.poster && { type: 'image', src: video.poster, caption: video.caption }) ||
+    image ||
     video ||
     project.media[0];
 

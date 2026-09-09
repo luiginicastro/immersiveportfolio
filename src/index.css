@@ -389,13 +389,13 @@ main {
 .case-summary {
   font-size: 1.2rem;
   line-height: 1.6;
-  max-width: 720px;
+  max-width: 85%;
   color: var(--text);
   margin-bottom: 56px;
 }
 
 .case-section {
-  max-width: 720px;
+  max-width: 85%;
   margin-bottom: 44px;
 }
 
