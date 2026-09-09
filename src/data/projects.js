@@ -43,6 +43,11 @@ export const projects = [
       },
       { type: 'image', src: '/media/seeds-of-return-1.jpg', caption: 'The void world: bare trees in the fog before anything is planted' },
       { type: 'image', src: '/media/seeds-of-return-2.jpg', caption: 'Grabbing a seed from a tree' },
+      { type: 'image', src: '/media/seeds-of-return-3.jpg', caption: 'Planting a seed at the base of the tree, with the first sprouts already coming up' },
+      { type: 'image', src: '/media/seeds-of-return-4.jpg', caption: 'New growth breaking through as the fog begins to lift' },
+      { type: 'image', src: '/media/seeds-of-return-5.jpg', caption: 'Birds return to a bare tree against the Toronto skyline' },
+      { type: 'image', src: '/media/seeds-of-return-6.jpg', caption: 'A deer and a rabbit settle into the growing garden' },
+      { type: 'image', src: '/media/seeds-of-return-7.jpg', caption: 'The full ecosystem, brought back through stillness' },
     ],
   },
   {

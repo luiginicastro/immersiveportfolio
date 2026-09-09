@@ -40,7 +40,7 @@ github.com/luiginicastro/immersiveportfolio (branch main).
 1. **Seeds Of Return** (2025, Quest 3, Unity): mixed reality installation about
    climate grief and stillness. Luigi is Lead Developer only; the art assets
    were bought from the Unity Asset Store, so do not credit him as artist. Hero
-   video in place (3 min, H.264 re-encode of Luigi's HEVC capture) plus two
+   video in place (3 min, H.264 re-encode of Luigi's HEVC capture) plus seven
    stills pulled from it. Case-study text done (Luigi's write-up verbatim).
 2. **The Visceral Return** (2025, Quest 3, Unity): immersive journey by artist
    Dalia Elcharbini; environment art by Alexander Martins; Luigi was Lead
