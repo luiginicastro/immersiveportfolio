@@ -413,6 +413,29 @@ main {
   color: var(--text-dim);
 }
 
+.case-quote {
+  margin: 24px 0 0;
+  padding: 20px 24px;
+  border-left: 2px solid var(--accent-a);
+  background: var(--surface);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.case-quote p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.case-quote cite {
+  display: block;
+  margin-top: 12px;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+
 .case-section .case-note {
   margin-top: 14px;
   padding-left: 14px;

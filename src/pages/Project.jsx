@@ -54,6 +54,12 @@ export default function Project() {
           <h2>{s.heading}</h2>
           <p>{s.body}</p>
           {s.note && <p className="case-note">{s.note}</p>}
+          {s.quote && (
+            <blockquote className="case-quote">
+              <p>{s.quote.text}</p>
+              <cite>{s.quote.by}</cite>
+            </blockquote>
+          )}
         </section>
       ))}
 

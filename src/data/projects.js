@@ -9,7 +9,9 @@
 // what to record and at which aspect ratios.
 //
 // Sections take { heading, body } plus an optional note, rendered as a
-// smaller line under the body (used for asides like recording caveats).
+// smaller line under the body (used for asides like recording caveats), and
+// an optional quote: { text, by } rendered as an attributed pull quote. Use
+// quote for words that are not Luigi's, since the site copy is first person.
 //
 // Optional download: { label, href, size, note }. Renders a "Try it yourself"
 // block with a download button on the case study. Host the APK externally
@@ -86,6 +88,10 @@ export const projects = [
       {
         heading: 'The experience',
         body: 'The experience takes viewers into a dreamlike world, inviting them into an intimate meditation on return, belonging, and identity.',
+        quote: {
+          text: 'A surreal, multi-sensory extension of my art where many of the visual metaphors and characters from my works come to life. At its core, I created this journey with the intention to give the Palestinian diaspora a small glimpse of home. A return that can be felt.',
+          by: 'Dalia Elcharbini',
+        },
       },
       {
         heading: 'What I built',
@@ -93,7 +99,12 @@ export const projects = [
       },
     ],
     media: [
-      { type: 'video', src: '', caption: 'Hero: journey through the living landscape (16:9, 30-60s)' },
+      {
+        type: 'video',
+        src: '/media/the-visceral-return.mp4',
+        poster: '/media/the-visceral-return-poster.jpg',
+        caption: 'In-headset capture of The Visceral Return',
+      },
       { type: 'image', src: '/media/visceral-return-1.webp', caption: 'The Dome of the Rock and the Dome of the Chain' },
       { type: 'image', src: '/media/visceral-return-2.webp', caption: 'The stairway leading up to the dome' },
       { type: 'image', src: '/media/visceral-return-3.webp', caption: 'The dome from across the plaza' },
