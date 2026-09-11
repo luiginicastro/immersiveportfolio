@@ -52,7 +52,7 @@ github.com/luiginicastro/immersiveportfolio (branch main).
    flow/optimization). Five environment images already in `public/media/`
    (pulled from Alexander's ArtStation). Hero video in place (2:35, H.264
    re-encode of Luigi's HEVC capture, original in `media-src/`) with a poster
-   pulled from the 45s mark.
+   pulled from the 0:56 mark.
 3. **IC Contemporary** (2022 - Present, Quest 3/Windows/macOS, Unity + Normcore
    + OpenXR): Toronto gallery's multiplayer platform for emerging artists,
    Luigi's long-running passion project. Case-study text done; six exhibit
