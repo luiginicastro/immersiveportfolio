@@ -23,6 +23,10 @@ github.com/luiginicastro/immersiveportfolio (branch main).
 - Luigi drops raw captures in `public/media/`; compress them before use
   (`sips` for images, `ffmpeg` for video, both installed) and move the
   originals to `media-src/` (gitignored). GitHub rejects files over 100 MB.
+- Optional `download` on a project renders a "Try it yourself" block with a
+  download button. Seeds Of Return's APK (about 240 MB) is a GitHub Release
+  asset (tag `seeds-of-return-v1.0`); the repo was made public so the link
+  works. Never commit APKs to `public/`, they exceed GitHub's 100 MB limit.
 - Pages: Home (hero + project grid), `/work/<slug>` case studies, `/about`.
   Contact is Instagram/email/LinkedIn/resume links in nav and footer, not a page.
 

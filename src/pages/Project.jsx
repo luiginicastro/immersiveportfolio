@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Download } from 'lucide-react';
 import { projects } from '../data/projects';
 import Media from '../components/Media';
 
@@ -53,8 +53,29 @@ export default function Project() {
         <section key={s.heading} className="case-section">
           <h2>{s.heading}</h2>
           <p>{s.body}</p>
+          {s.note && <p className="case-note">{s.note}</p>}
         </section>
       ))}
+
+      {project.download && (
+        <section className="case-download">
+          <div className="case-download-text">
+            <h2>Try it yourself</h2>
+            <p>{project.download.note}</p>
+          </div>
+          {project.download.href ? (
+            <a href={project.download.href} className="button" download>
+              <Download size={16} />
+              {project.download.label}
+              {project.download.size && <span className="case-download-size">{project.download.size}</span>}
+            </a>
+          ) : (
+            <span className="button case-download-soon" aria-disabled="true">
+              <Download size={16} /> APK coming soon
+            </span>
+          )}
+        </section>
+      )}
 
       {gallery.length > 0 && (
         <div className="case-gallery">

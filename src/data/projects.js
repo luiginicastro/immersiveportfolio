@@ -7,6 +7,15 @@
 // also used as the home-grid thumbnail when a project has no real images yet).
 // Leave src as '' to render a styled placeholder. See MEDIA_GUIDE.md for
 // what to record and at which aspect ratios.
+//
+// Sections take { heading, body } plus an optional note, rendered as a
+// smaller line under the body (used for asides like recording caveats).
+//
+// Optional download: { label, href, size, note }. Renders a "Try it yourself"
+// block with a download button on the case study. Host the APK externally
+// (Google Drive, itch.io, SideQuest, or a GitHub Release); APKs are far over
+// GitHub's 100 MB file limit so never commit them to public/. While href is
+// '' the button shows as "coming soon".
 
 export const projects = [
   {
@@ -18,12 +27,19 @@ export const projects = [
     platform: 'Meta Quest 3',
     tools: 'Unity',
     accent: ['#4ade80', '#fbbf24'],
+    download: {
+      label: 'Download APK for Quest 3',
+      href: 'https://github.com/luiginicastro/immersiveportfolio/releases/download/seeds-of-return-v1.0/SeedsofReturn.apk',
+      size: '240 MB',
+      note: 'Requires a Meta Quest 3 with developer mode turned on. Install the APK with SideQuest or Meta Quest Developer Hub, then launch it from Unknown Sources in your library. Hand tracking only, no controllers needed.',
+    },
     summary:
       'In a world where urgency overshadows introspection, this piece invites slowness. Through augmented stillness and shifting atmospheric states, this mixed reality installation asks: What emerges when we stop trying to move forward?',
     sections: [
       {
         heading: 'The experience',
         body: 'Visitors enter a world shrouded in thick fog, a symbolic stand-in for grief, uncertainty, and the psychic weight of ecological collapse. Movement thickens the fog. Stillness clears it. As the air begins to lift, the earth signals a chance for potential new life. A garden of native flora and fauna can grow when visitors plant the seeds that sprout in response to their stillness.',
+        note: 'The video on this page showcases the experience without the user guidance for a smoother recording. The final product itself guides the user throughout the experience.',
       },
       {
         heading: 'Climate grief as a relational state',

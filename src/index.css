@@ -413,6 +413,67 @@ main {
   color: var(--text-dim);
 }
 
+.case-section .case-note {
+  margin-top: 14px;
+  padding-left: 14px;
+  border-left: 2px solid var(--accent-a);
+  font-size: 0.9rem;
+  color: var(--text-faint);
+}
+
+.case-download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 56px 0;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.case-download-text {
+  max-width: 62ch;
+}
+
+.case-download h2 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  background: linear-gradient(100deg, var(--accent-a), var(--accent-b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.case-download p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.case-download .button {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.case-download-size {
+  opacity: 0.75;
+  font-weight: 400;
+}
+
+.case-download .case-download-soon {
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text-faint);
+  cursor: default;
+}
+
+.case-download .case-download-soon:hover {
+  opacity: 1;
+  box-shadow: none;
+}
+
 .case-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -737,5 +798,11 @@ main {
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+
+  .case-download {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 }
